@@ -16,6 +16,7 @@ import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
 import React from "react";
 import { Meta, Schema } from "@/once-ui/modules";
+import Link from "next/link";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -45,10 +46,15 @@ export default function About() {
       items: about.studies.institutions.map((institution) => institution.name),
     },
     {
+      title: about.certifications.title,
+      display: about.certifications.display,
+      items: about.certifications.certifications.map((certification) => certification.name),
+    },
+    {
       title: about.technical.title,
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
-    },
+    }
   ];
   return (
     <Column maxWidth="m">
@@ -179,7 +185,7 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl" style={{ textAlign: "justify" }}>
               {about.intro.description}
             </Column>
           )}
@@ -209,6 +215,7 @@ export default function About() {
                           as="li"
                           variant="body-default-m"
                           key={`${experience.company}-${index}`}
+                          style={{ textAlign: "justify" }}
                         >
                           {achievement}
                         </Text>
@@ -266,6 +273,31 @@ export default function About() {
             </>
           )}
 
+          {about.certifications.display && (
+            <>
+              <Heading as="h2" id={about.certifications.title} variant="display-strong-s" marginBottom="m">
+                {about.certifications.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.certifications.certifications.map((certification, index) => (
+                  <Column key={`${certification.name}-${index}`} fillWidth gap="4">
+                    <Link
+                      href={certification.href}
+                      style={{ textDecoration: "none", color: "inherit", textDecorationLine: "underline", textDecorationColor: "white" }}
+                      aria-label="Trademark"
+                      target="_blank"
+                    >
+                      {certification.name}
+                    </Link>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {certification.description}
+                    </Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
           {about.technical.display && (
             <>
               <Heading
@@ -279,10 +311,36 @@ export default function About() {
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap" }}>
+                      {/* Skill title */}
+                      <Text
+                        variant="heading-strong-m"
+                        style={{ whiteSpace: "nowrap", flexShrink: 0, minWidth: "60px" }}
+                      >
+                        {skill.title}
+                      </Text>
+
+                      {/* Progress bar and percentage */}
+                      <div style={{ flexGrow: 1, display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                        <div style={{ flexGrow: 1, height: "8px", backgroundColor: "#e0e0e0", borderRadius: "8px" }}>
+                          <div
+                            style={{
+                              width: `${skill.percentage}%`,
+                              backgroundColor: "#0070f3",
+                              height: "8px",
+                              borderRadius: "8px"
+                            }}
+                          />
+                        </div>
+                        <Text
+                          variant="body-default-s"
+                          onBackground="neutral-medium"
+                          style={{ minWidth: "30px", textAlign: "right", whiteSpace: "nowrap" }}
+                        >
+                          {skill.percentage}%
+                        </Text>
+                      </div>
+                    </div>
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
                         {skill.images.map((image, index) => (

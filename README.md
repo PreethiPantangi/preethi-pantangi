@@ -1,8 +1,8 @@
 # **Magic Portfolio by Once UI**
 
-View the [demo here](https://demo.magic-portfolio.com).
+View the [demo here](https://demo.preethi-pantangi.com).
 
-![Magic Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
+![Magic Portfolio](https://demo.preethi-pantangi.com/images/og/home.jpg)
 
 
 # **Getting started**
@@ -11,7 +11,7 @@ Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](http
 
 **1. Clone the repository**
 ```
-git clone https://github.com/once-ui-system/magic-portfolio.git
+git clone https://github.com/once-ui-system/preethi-pantangi.git
 ```
 
 **2. Install dependencies**
@@ -41,7 +41,7 @@ Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 
 # **Documentation**
 
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
+Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/preethi-pantangi/quick-start)
 
 # **Features**
 
@@ -79,7 +79,7 @@ Localization added by [François Hernandez](https://github.com/francoishernandez
 # **Get involved**
 
 - Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
+- Report a [bug](https://github.com/once-ui-system/preethi-pantangi/issues/new?labels=bug&template=bug_report.md).
 
 # **License**
 
@@ -91,4 +91,4 @@ Distributed under the CC BY-NC 4.0 License.
 See `LICENSE.txt` for more information.
 
 # **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fpreethi-pantangi&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fpreethi-pantangi&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.preethi-pantangi.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fpreethi-pantangi%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)

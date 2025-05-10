@@ -1,28 +1,17 @@
-import { Logo } from "@/once-ui/components";
-
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Sai Preethi",
+  lastName: "Pantangi",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Software Engineer",
+  avatar: "/images/preethipantangi.jpg",
+  email: "pantangisaipreethi@gmail.com",
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Telugu", "Hindi", "Marathi"], // optional: Leave the array empty if you don't want to display languages
 };
 
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
-};
+const newsletter = {};
 
 const social = [
   // Links are automatically displayed.
@@ -30,17 +19,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "github.com/preethipantangi",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/preethipantangi/",
   },
   {
     name: "Email",
@@ -51,20 +35,20 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/preethipantangi.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Designing performant frontends, powering them with solid backends.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent company: <strong className="ml-4">22nd Century Technologies</strong></>,
+    href: ''
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Preethi, a full-stack engineer architecting scalable backend systems and optimize user-facing experiences.
+      <br /> After hours, I prototype interfaces, build tools, and explore open-source contributions.
     </>
   ),
 };
@@ -83,16 +67,17 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendly.com/pantangisaipreethi",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Sai Preethi is a US-based full-stack engineer with a passion for transforming complex technical challenges into performant, 
+        user-friendly solutions. Her work spans scalable backend architectures, responsive frontends, and the intersection of 
+        intuitive design and robust engineering. Whether building internal tools or leading migration efforts, she brings precision, 
+        clarity, and care to every layer of the stack.
       </>
     ),
   },
@@ -101,42 +86,96 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "22nd Century Technologies",
+        timeframe: "June 2024 - Present",
+        role: "Programmer Analyst",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led the migration of a monolithic JSP-based crash reporting system to a React JS and Spring Boot microservices architecture, 
+            reducing page load time by 40%. Rearchitected the frontend with component-based approach, lazy loading, and API-level 
+            caching, resulting in highly responsive UI, significantly enhancing user experience and operational efficiency. 
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Designed the database schema, integrated backend services with external systems such as Purvis and Flock via REST APIs 
+            and implemented real-time schedulers using Java single-threaded and Lambda, reducing data sync latency by 60%. 
+            Documented query logic, database schema updates, and data flow diagrams in Confluence to support cross-team. 
           </>,
+          <>
+            Authored and optimized complex SQL queries, stored procedures, in Informix and Oracle, improving XML report generation 
+            speeds by 25% and supporting normalized data flow, maintaining referential integrity, and improving query performance. 
+          </>,
+          <>
+            Programmed a Java-based Data Import/Export and Table Upgrade Automation Tool using Spring Boot, React JS, and 
+            Informix, enabling XML generation with preserved key relationships and automated schema migrations across versions, 
+            reducing manual migration efforts by 40 hours per release and cut schema upgrade time from 3 days to under 4 hours. 
+          </>,
+          <>
+            Managed and mentored an offshore development team of 5+ engineers, conducted 30+ code reviews per release cycle, 
+            delegated tasks using Agile methodologies, and maintained 95% on-time delivery across 2 high-impact state agency 
+            projects, improving development efficiency by 20%.
+          </>
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Dassault Systèmes",
+        timeframe: "August 2021 - December 2022",
+        role: "Software Engineer Specialist",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+             Architected the Schedule Tab feature, by collaborating with cross-functional teams and leveraging asynchronous 
+            programming in JavaScript, and processing of REST API requests using Spring Boot and GraphQL reducing latency to ~4 RPS. 
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Utilized Redux for state management and optimized UI performance by integrating server-side pagination and reusable 
+            functional components, resulting in a 56% better page load time and smoother experience in PLM modules. 
           </>,
+          <>
+            Adopted Test Driven Development(TDD) with Jest, using mocking and stubbing techniques for comprehensive test coverage 
+            in an incremental development process, leading to 95% code coverage and significantly reducing post-release bugs.
+          </>,
+          <>
+            Engineered a reusable, modular roadmap component for PLM applications using JavaScript and RESTful APIs, enabling 
+            seamless integration across multiple platforms and reducing feature rollout time by 30%, while improving code reusability 
+            and maintainability.
+          </>, 
+          <>
+            Utilized SVN version control and CI/CD pipelines to ensure consistent source code integration with Agile setup, improving 
+            code quality through code reviews for junior developers, resulting in reduction of critical bugs by 15%.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Xoriant Solutions Pvt Ltd",
+        timeframe: "July 2019 - August 2021",
+        role: "Software Engineer",
+        achievements: [
+          <>
+            Devised and developed RESTful microservices using Spring Boot and JAX-RS, adhering to microservices architecture best 
+            practices and supporting scalable backend services across multiple modules and deployed in docker containers. 
+          </>,
+          <>
+            Adopted Spring Cloud Config Server for centralized configuration management and integrated Splunk for real-time, 
+            centralized logging and monitoring, enhancing observability across services.
+          </>,
+          <>
+            Built responsive frontend modules using Angular and Spring Boot, leveraging NPM, Gulp, and Flux for modular view 
+            rendering and efficient routing, improving load performance and developer productivity.
+          </>,
+          <>
+            Engineered a medicine recommendation platform with Angular and web scraping techniques, enriching content with 
+            1,000+ medicine images, extending the UI to React Native, enabling seamless cross-platform access on iOS and Android. 
+          </>,
+          <>
+            Refactored 100,000+ lines of legacy Java code for Disney’s Android gaming app, applying code modularization, memory 
+            management improvements, and lazy loading techniques to boost app performance, enabling multilingual support, and 
+            significantly increase user engagement and retention. 
+          </>,
+          <>
+            Resolved high-priority production issues through detailed root cause analysis and built a Java-based Scheduled Task 
+            Monitor using Windows Task Scheduler, resulting in a 30% improvement in system reliability and uptime. 
+          </>
         ],
         images: [],
       },
@@ -144,15 +183,15 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "George Mason Uniersity",
+        description: <>Master's in Computer Science, January 2023 - May 2024</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "BVRIT Hyderabad College of Engineering for Women",
+        description: <>Bachelor's in Information Technology, August 2015 - May 2019</>,
       },
     ],
   },
@@ -161,48 +200,94 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "HTML",
+        description: <></>,
+        percentage: 70,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "CSS",
+        percentage: 70,
+        images: [],
       },
+      {
+        title: "JavaScript",
+        percentage: 90,
+        images: [],
+      },
+      {
+        title: "TypeScript",
+        percentage: 90,
+        images: [],
+      },
+      {
+        title: "Java",
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "Python",
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "Node JS",
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "React JS",
+        percentage: 85,
+        images: [],
+      },
+      {
+        title: "Next JS/ Vue JS",
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "Angular",
+        percentage: 85,
+        images: [],
+      },
+      {
+        title: "Spring Boot",
+        percentage: 70,
+        images: [],
+      },
+      {
+        title: "GraphQL",
+        percentage: 80,
+        images: [],
+      },
+      {
+        title: "AWS",
+        percentage: 80,
+        images: [],
+      },
+      {
+        title: "SQL",
+        percentage: 80,
+        images: [],
+      },
+      {
+        title: "Git",
+        percentage: 80,
+        images: [],
+      }
     ],
   },
-};
-
-const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  certifications: {
+    display: true,
+    title: "Certifications",
+    certifications: [
+      {
+        name: "AWS Certified Cloud Practitioner",
+        description: "September 2024 - September 2027",
+        href: "https://www.credly.com/badges/8d34f080-792e-408c-ad44-2663f54efa45"
+      }
+    ]
+  }
 };
 
 const work = {
@@ -214,55 +299,14 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+const contact = {
+  path: "/contact",
+  label: "Contact Me",
+  title: ``,
+  description: ``,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  images: [],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, work, contact };
