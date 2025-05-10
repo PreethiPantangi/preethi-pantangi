@@ -5,7 +5,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Software Engineer",
-  avatar: "/images/preethipantangi.jpg",
+  avatar: "/images/preethipantangi.JPG",
   email: "pantangisaipreethi@gmail.com",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Telugu", "Hindi", "Marathi"], // optional: Leave the array empty if you don't want to display languages
@@ -35,7 +35,7 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/preethipantangi.jpg",
+  image: "/images/preethipantangi.JPG",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
